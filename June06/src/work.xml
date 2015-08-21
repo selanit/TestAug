@@ -1,0 +1,31 @@
+<TestsData >
+	<abc>SGN-002</abc>
+    <Test id="SGN-0001">
+        <Description>Verify signup and delete a user</Description>
+        <included>Yes</included>
+        <ignoreReason>No reason to ignore TC</ignoreReason>
+        <userName>sgn_001@gmail.com</userName>
+        <password>testmint</password>
+        <!--    -->
+    </Test>
+    <Test id="SGN-0002">
+        <Description>
+        <ChildDesc1>Child 1 Description</ChildDesc1>
+        <ChildDesc2>Child 2 Description</ChildDesc2>
+        </Description>
+        <included>Yes</included>
+        <ignoreReason>No reason to ignore TC</ignoreReason>
+        <userName>sgn_002@anymail.com</userName>
+        <password>no_password</password>
+    </Test>
+    <Test id="SGN-0003">
+        <Description>Valid input Validation for ConfirmEmail field</Description>
+        
+        <included>Yes</included>
+        <ignoreReason>No reason to ignore TC, the third node</ignoreReason>
+        <userName>sgn_003@anymail.com</userName>
+        <password>no_password</password>
+    </Test>
+    <klm> The KLM Node </klm>
+    </TestsData>
+    

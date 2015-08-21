@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="10" name="Failed suite [Groups ordering regression]" parallel="methods">
+  <test name="Groups Run(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="bc"/>
+        <include name="abcd"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bss.calcapiTest.CalciAPITestNG_Jul11">
+        <methods>
+          <include name="testMult"/>
+        </methods>
+      </class> <!-- com.bss.calcapiTest.CalciAPITestNG_Jul11 -->
+      <class name="com.bss.calcapiTest.CalcAPI_Jun12Test_TestNGJul11">
+        <methods>
+          <include name="testMult"/>
+        </methods>
+      </class> <!-- com.bss.calcapiTest.CalcAPI_Jun12Test_TestNGJul11 -->
+    </classes>
+  </test> <!-- Groups Run(failed) -->
+</suite> <!-- Failed suite [Groups ordering regression] -->

@@ -1,0 +1,19 @@
+ 
+<suite name="Groups ordering regression" verbose="10" thread-count="2"  parallel = "methods">
+  
+	
+	<test name="Groups Run">
+		
+		<classes>
+			<class name="com.bss.calcapiTest.CalciAPITestNG_Jul11" />
+			<class name="com.bss.calcapiTest.CalcAPI_Jun12Test_TestNGJul11" />	
+		</classes>
+		<groups>
+		    <run>
+		    <include name="bc" />
+		    <include name="abcd"/>
+		    <exclude name="sanity"/>
+		    </run>
+		</groups>
+	</test>
+</suite>
